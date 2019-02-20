@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: courier;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #aec6cf;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<script type="text/javascript" src="calculator.js"></script>
+<script type="text/javascript" src="Calculator2.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="file:///C:/Users/CORGuest/Documents/Angela/MyFirstHTMLPage.html">Home</a>
+  <a href="#product">Product</a>
+  <div class="dropdown">
+    <button class="dropbtn">Calculators
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Calculator.html">Calculator #1</a>
+      <a href="Calculator2.html">Calculator #2</a>
+      <a href="Calculator3.html">Calculator #3</a>
+    </div>
+  </div> 
+  <div align="right">
+<h1 style="color:#aec6cf"> The Normal Calculator</h1>
+
+
+  </div>
+</div>
+
+
+<div class=”calculator”>
+  <p id ="display">
+    Your Input: 
+    <span id="number"></span>
+
+  </p>
+<br>
+  <div class=”calculator__display” id="output">Output: </div>
+<div class="calculator__keys">
+  <style> 
+  .button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+</style>
+  <button onclick="pass('+')" class="button" data-action="add">Add</button>
+  <button onclick="pass('-')" class="button" data-action="subtract">Subtract</botton>
+  <button onclick="pass('*')" class="button" data-action="multiply">Multiply</button>
+  <button onclick="pass('/')" class="button" data-action="divide">Divide</button> <br>
+  <p></p>
+  <button onclick="pass(1)" class="button">1</button>
+  <button onclick="pass(2)" class="button">2</button>
+  <button onclick="pass(3)" class="button">3</button>
+  <button onclick="pass(4)" class="button">4</button>
+  <button onclick="pass(5)" class="button">5</button>
+  <button onclick="pass(6)" class="button">6</button>
+  <button onclick="pass(7)" class="button">7</button>
+  <button onclick="pass(8)" class="button">8</button>
+  <button onclick="pass(9)" class="button">9</button>
+  <button onclick="pass(0)" class="button">0</button>
+  <button onclick="pass('.')" class="button"data-action="decimal">.</button>
+  <button onclick="clear2()" class="button">AC</button>
+  <button onclick="calculating()" class="button"data-action="calculate">=</button>
+</div>
+
+
+
+ </body>
