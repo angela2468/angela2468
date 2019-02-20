@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: courier;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #aec6cf;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#product">Product</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <div align="right">
+  
+  <form action="/action_page.php">
+  First name: <input type="text" name="FirstName" value="First Name"><br>
+  Last name: <input type="text" name="LastName" value="Surname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+  </div>
+</div>
+
+</body>
+
+<head>
+<title>CompanyName</title>
+</head>
+<body>
+
+<div align="side ">
+  <h1 style="font-family:courier">Paintings and Designs</h1>
+  <h2 style= "font-family:courier">Light vs Dark </h2>
+  <h3 style= "font-family:courier"; >Watercolour Idea #1</h3>
+  <table>
+  
+  <button style="font-family:courier;background-color:black;color:white; font-size:100%"onclick="document.getElementById('waterColurImage').style = 'display: none'">Hide</button>
+   <button style="font-family:courier;background-color:black;color:white; font-size:100%"onclick="document.getElementById('waterColurImage').style = 'display: block'">Show</button>
+	<tr>
+		<td><img id="waterColurImage" src ="WaterColour.jpg" width = "280" height = "280"align="left"/></td>
+		<td>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> directly introduce content into the page. Other tags such as <p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+  </td>
+	</tr>
+  </table>
+
+  </div>
+  
+  <h3 style= "font-family:courier"; >Watercolour Idea #2</h3>
+  <img src ="WaterColour2.jpg" width = "280" height = "280"/>
+  <h2 style= "font-family:courier">Flowers</h2>
+  <h3 style= "font-family:courier"; >Peony</h3>
+  <img src ="Watercolour3.png" width = "280" height = "280"/>
+  <h3 style= "font-family:courier"; >Lavender</h3>
+  <img src ="Watercolour4.png" width = "280" height = "280"/>
+  <h3 style= "font-family:courier"; >Blue Daisy</h3>
+  <img src ="Watercolour5.png" width = "280" height = "280"/>
+ </div>
+ <div></div>
+ 
+
+</body> 
